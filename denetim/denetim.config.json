@@ -1,0 +1,37 @@
+{
+  "proje": "..",
+  "derleme": {
+    "komut": "npm run build",
+    "klasor": "dist",
+    "sayfalar": ["index.html", "yazi.html", "sunum.html", "notlar.html"],
+    "boyutArtisUyari": 0.2
+  },
+  "uygulama": {
+    "sayfalar": ["index.html", "yazi.html?template=bos", "sunum.html?new=1", "notlar.html"],
+    "acilisUyariMs": 4000,
+    "buyukBelgeParagraf": 1500,
+    "buyukBelgeYuklemeUyariMs": 3000,
+    "tusGecikmesiUyariMs": 80,
+    "yoksay": []
+  },
+  "office": {
+    "esik": 0.98,
+    "ekKlasorler": []
+  },
+  "inceleme": {
+    "model": "qwen2.5-coder:7b",
+    "ollama": "http://127.0.0.1:11434",
+    "numCtx": 16384,
+    "maxKarakter": 24000,
+    "maxParca": 40,
+    "zamanAsimiSn": 300,
+    "kritikHataSayilir": false,
+    "uzantilar": [".js", ".mjs", ".cjs", ".ts", ".jsx", ".tsx", ".vue", ".html", ".css"],
+    "haric": ["dist/", "node_modules/", "android/", "release/", "denetim/", "package-lock.json"]
+  },
+  "surum": {
+    "temizCalismaAgaci": true,
+    "uzakDepo": "https://github.com/harunfidan6/kalla-office-surumler.git",
+    "yayinDeposuAdi": "kalla-office-surumler"
+  }
+}

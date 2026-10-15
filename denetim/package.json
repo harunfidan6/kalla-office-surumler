@@ -1,0 +1,20 @@
+{
+  "name": "kalla-denetim",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Kalla Office denetçisi: derleme, uygulama testi, Word/PowerPoint uyumu, yerel model ile kod incelemesi",
+  "type": "module",
+  "scripts": {
+    "denetle": "node denetle.mjs",
+    "surum": "node denetle.mjs --surum",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "jszip": "^3.10.1",
+    "playwright": "1.56.1"
+  },
+  "devDependencies": {
+    "docx": "^9.7.1",
+    "pptxgenjs": "^3.12.0"
+  }
+}
